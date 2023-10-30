@@ -32,7 +32,7 @@ createbuttons()
 
 
 
-let balance = JSON.parse(localStorage.getItem('balance'))
+let balance = JSON.parse(localStorage.getItem('balance')) || {"🍎":0,"🍉":0,"🥭":0,"🍍":0,"🍋":0,"🍇":0,"🍌":0,"🍊":0,"🍈":0}
 
 
 let fruits = document.getElementsByClassName('fruitbtn')
@@ -133,15 +133,15 @@ for(i = 0; i < 25; i++){
 }
 
 function showBalance(){
-    document.getElementsByClassName('balance-🍎')[0].textContent = balance['🍎']
-    document.getElementsByClassName('balance-🥭')[0].textContent = balance['🥭']
-    document.getElementsByClassName('balance-🍍')[0].textContent = balance['🍍']
-    document.getElementsByClassName('balance-🍋')[0].textContent = balance['🍋']
-    document.getElementsByClassName('balance-🍉')[0].textContent = balance['🍉']
-    document.getElementsByClassName('balance-🍇')[0].textContent = balance['🍇']
-    document.getElementsByClassName('balance-🍌')[0].textContent = balance['🍌']
-    document.getElementsByClassName('balance-🍊')[0].textContent = balance['🍊']
-    document.getElementsByClassName('balance-🍈')[0].textContent = balance['🍈']
+    document.getElementsByClassName('balance-🍎')[0].textContent = balance['🍎'] || 0
+    document.getElementsByClassName('balance-🥭')[0].textContent = balance['🥭'] || 0
+    document.getElementsByClassName('balance-🍍')[0].textContent = balance['🍍'] || 0
+    document.getElementsByClassName('balance-🍋')[0].textContent = balance['🍋'] || 0
+    document.getElementsByClassName('balance-🍉')[0].textContent = balance['🍉'] || 0
+    document.getElementsByClassName('balance-🍇')[0].textContent = balance['🍇'] || 0
+    document.getElementsByClassName('balance-🍌')[0].textContent = balance['🍌'] || 0
+    document.getElementsByClassName('balance-🍊')[0].textContent = balance['🍊'] || 0
+    document.getElementsByClassName('balance-🍈')[0].textContent = balance['🍈'] || 0
 }
 showBalance()
 

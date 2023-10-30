@@ -1,0 +1,158 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body{
+    background-color: rgb(57, 183, 63);
+    font-family: 'Roboto', sans-serif;
+}
+
+.fruitbtn {
+    padding: 5px 15px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    transition: 0.2s;
+    border: 0;
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 10px;
+}
+.fruitbtn:hover{
+    background: #63bed9;
+}
+
+.fruitbtn:active {
+    background: rgb(89, 187, 209);
+}
+.balance { 
+   position: absolute;
+   right: 0px;
+   top: 120px;
+   background: white;
+   border-radius: 4px;
+   padding: 15px;
+   overflow-y: scroll;
+   height: 80vh;
+  
+
+   
+}
+.item{
+    display: flex;
+    padding: 5px 15px;
+}
+.item:hover{
+background: rgb(162, 248, 162);
+transition: 0.2s;
+border-radius: 4px;
+}
+.emoji{
+   margin-right: 7px;
+   
+}
+.money{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background: #ffffff;
+    border-radius: 7px;
+    width: 88px;
+    padding: 10px;
+    
+}
+.sell-fruit{
+height: 30px;
+background: skyblue;
+margin-top: 15px;
+margin-left: 10px;
+border-radius: 7px;
+transition: 0.2s;
+border: 0;
+cursor: pointer;
+}
+.sell-fruit:hover{
+    background: rgb(111, 179, 206);
+}
+.sell{
+    font-size: 13px;
+    border-radius: 4px;
+    border: 0;
+    background: linear-gradient(45deg, rgb(187, 0, 255), rgb(132, 250, 244));
+    padding: 10px 30px;
+    transition: 0.2s;
+    cursor: pointer;
+    
+}
+.sell:hover{
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.453);
+}
+
+.app{
+    width: 70%;
+}
+.plus1{
+font-size: 14px;
+position: absolute;
+animation: 2s plus1;
+transition: 0.2s;
+width: 30px;
+}
+
+@keyframes plus1 {
+    0%{
+
+    }
+    100%{
+       top: 450px;
+       left: 90%; 
+       opacity: 0;
+    }
+}
+
+.shop{
+width: 70%;
+height: 250px;
+overflow-y: scroll;
+position: absolute;
+top: 30px;
+left: 30px;
+background: rgb(223, 221, 221);
+padding: 10px;
+display: flex;
+gap: 10px;
+border-radius: 7px;
+}
+.shopItem{
+background: white;
+padding: 20px;
+width: 23%;
+height: auto;
+min-height: 300px; 
+}
+.app{
+    margin-top: 300px;
+}
+
+.shopTitle{
+    font-weight: bold;
+}
+.shopPrice{
+    font-weight: normal;
+    color: gray;
+}
+.shopBtn{
+ background: linear-gradient(45deg, rgb(8, 190, 8), rgb(181, 14, 181));   
+ border: none;
+ border-radius: 7px;
+ padding:7px 20px;
+ color: #ffffff;
+ box-shadow: 0 0 4px green;
+ cursor: pointer;
+}
+.bal{
+ margin-left: 15px;
+}

@@ -1,0 +1,29 @@
+.menu{
+    background: linear-gradient(45deg, rgb(9, 199, 158), rgb(109, 17, 222));
+    animation: 5s identifier infinite;
+    height: 2000px;
+    width: 2000px;
+    position: absolute;
+    left: -300px;
+    top: -300px;
+}
+@keyframes identifier {
+ 0%{}
+ 100%{
+    transform:rotate(360deg);
+}       
+}
+.setting, .start{
+    position: absolute;
+    left: 300px;
+    top: 350px; 
+    background: linear-gradient(45deg , rgba(255, 216, 152, 0.87), rgba(239, 145, 255, 0.7));
+    padding: 7px 20px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 20 gray;
+    color: white;
+}
+.start{
+    top: 400px;
+}
